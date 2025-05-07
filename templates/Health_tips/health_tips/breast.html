@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="../ALL IMAGES/logo.new.png">
+    <title>Health & Medicine</title>
+    <style>
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+           body {
+            background-color: #f8f9fa;
+        }
+
+        /* Top Bar */
+        .header-top {
+            background: linear-gradient(to right,hsl(210, 38%, 49%) ,hsl(210, 38%, 49%) );
+            color: #fff;
+            padding: 10px 30px;
+            color: #fff;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .header-top a {
+            color: WHITE;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: 0.3s;
+        }
+
+        .header-top a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Header */
+        .header-main {
+            background: #5E8AB5    ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: WHITE;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            padding-bottom: 5px;
+        }
+
+        .nav-links a:hover {
+            color: WHITE;
+            border-bottom: 2px solid WHITE;
+        }
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.cta-button {
+            background: WHITE;
+            color: #003366;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background: hsl(210, 38%, 49%) ;
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+    
+footer {
+    background-color: #5E8AB5;
+    color: #fff;
+    padding: 60px 0 40px;
+    position: relative;
+    text-align: start;
+    text-align: center;}
+    
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.footer-column {
+    width: 18%;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.footer-column ul li a:hover {
+    opacity: 1;
+}
+
+.footer-help {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-help a {
+    color: #69B3FF;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-help p {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-column {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-sections {
+        flex-direction: column;
+    }
+
+    .footer-help {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+P1 {
+    color: black;
+}
+h2{
+    color:#333
+}
+h4{
+    color: white;
+}
+.hero-section {
+  background-color: #b0cdd1;
+  background-image: url(../ALL\ IMAGES/breast.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 150px 20px; /* ⬅️ More padding for more height */
+  margin: 60px 0;
+  color: #000;
+  border-radius: 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 600px; /* ⬅️ Ensures the box is tall enough */
+}
+
+    .hero-section h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero-section p {
+      font-size: 22px;
+      font-weight: 400;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 600px) {
+      .hero-section h1 {
+        font-size: 36px;
+      }
+      .hero-section p {
+        font-size: 18px;
+      }
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      color: #1d1d1d;
+      margin-bottom: 20px;
+    }
+    h3{
+        color: brown;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    h3 {
+    margin-bottom: 20px; /* Adds space after the heading */
+}
+
+h6,p6{
+    color:darkslategray;
+    margin-bottom: 20px;
+    font-size: 40px;
+   font-weight: bold;
+
+  
+}
+    </style>
+    </head>
+    <body>
+    
+        <!-- Top Bar -->
+        <div class="header-top">
+            <div>
+                📍 India | 📞 +91 9876543210 | ✉ support@ruralmedico.com
+            </div>
+            <div>
+                <a href="login.html">Login</a> | <a href="login.html">sign up</a>
+            </div>
+        </div>
+    
+         <!-- Main Header -->
+         <header class="header-main">
+            <div class="logo" style="display: flex; align-items: center; height: 40px;">
+                <img src="../ALL IMAGES/logo.new.png" style="height: 40px;">
+                <span style="font-size: 32px; line-height: 40px; color: white;">RURAL MEDICO</span>
+          
+        
+        
+                </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="medicine.html">Medicines</a></li>
+                    <li><a href="doctor.html">Consult a Doctor</a></li>
+                    <li><a href="health.html">Health Tips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="appointment.jpg" class="cta-button">Book Consultation</a>
+        </header>
+        
+<div class="hero-section">
+    <h6>Breast Cancer</h6>
+    <p6>Supporting your health & well-being at every stage of your<br> breast cancer journey</p6>
+  </div>
+  
+<section>
+    <h3>Breast Cancer Treatment Options</h3>
+  
+    <p>There are several ways to approach treatment for breast cancer, and it often takes a combination of therapies. It's important to weigh the potential benefits, side effects, and risks of each option.</p>
+  
+    <p>There are many different types of breast cancer. Some treatments target specific characteristics of cancer cells, so they only work on those particular cancers. Some treatments depend on how fast the cancer is growing and how far it has spread.</p>
+  
+    <p>Breast cancer treatment isn't the same for everyone. Read on to learn more about breast cancer treatments and factors that may help determine the best therapies for you.</p>
+  
+    <h3>Surgery</h3>
+    <p>For some people, surgery is a first-line treatment with the goal of removing the cancer. Performing a lymph node biopsy at the same time can help stage the cancer.</p>
+  
+    <h3>Lumpectomy</h3>
+    <p>A lumpectomy, or "breast-sparing surgery," involves removing the tumor and a margin of healthy tissue around it. A lumpectomy may also remove the sentinel lymph nodes .</p>
+    <p>A lumpectomy can be used for people with ductal carcinoma in situ or early-stage breast cancer. It’s also used after neoadjuvant treatment if the cancer shrinks enough.</p>
+  
+    <h3>Total Mastectomy</h3>
+    <p>A total mastectomy, also called a simple mastectomy, removes the whole breast. It usually includes removing sentinel lymph nodes. In a modified radical mastectomy, more lymph nodes under the arm are removed.</p>
+  
+    <p>A mastectomy may be a better option if:</p>
+    <ul>
+      <li>The tumor is large compared to breast size</li>
+      <li>You have multiple tumors</li>
+      <li>You do not want to have radiation therapy</li>
+      <li>You have a BRCA mutation and want to reduce future risk</li>
+    </ul>
+  
+    <h3>Breast Reconstruction</h3>
+    <p>It’s possible to preserve skin, nipple, and areola for reconstruction. Breast reconstruction can happen at the same time as mastectomy or later. Surgeons can use implants or tissue from another part of the body.</p>
+  
+    <h3>Radiation Therapy</h3>
+    <p> Radiation therapy uses high doses of radiation to kill cancer cells. According to the American Cancer Society, external beam radiation is the most common type of radiation for people who have breast cancer.</p>
+  
+    <p>Radiation may be used after surgery to destroy any cancer cells left behind, which lowers the chance of recurrence. If cancer has spread, radiation can help shrink or ease symptoms in other parts of the body.</p>
+  
+    <h3>Chemotherapy</h3>
+    <p>Chemotherapy is a systemic therapy that destroys cancer cells anywhere in the body. Chemotherapy can help:</p>
+    <ul>
+      <li>Before surgery (neoadjuvant chemotherapy): shrink tumors for less invasive surgery</li>
+      <li>After surgery (adjuvant chemotherapy): kill cancer cells left behind</li>
+      <li>As the main treatment for metastatic breast cancer</li>
+    </ul>
+  
+    <p>Many people may need both neoadjuvant and adjuvant therapy. You might need a combination of different chemotherapy drugs for treatment.</p>
+  
+    <h3>Hormone Therapy</h3>
+    <p>Some types of breast cancer need estrogen or progesterone to grow. Hormone therapy, also called endocrine therapy, blocks these hormones from reaching cancer cells.</p>
+  
+    <p>About 65% of breast cancers are hormone receptor (HR) positive. If your cancer is hormone receptor (HR) negative, hormone therapy won't be effective.</p>
+  
+    <h3>Immunotherapy</h3>
+    <p>Immunotherapy boosts the immune system to help it recognize and attack cancer cells. Immune checkpoint inhibitors are a type of immunotherapy.</p>
+  
+    <p>Checkpoint inhibitors target proteins to allow the immune system to attack cancer cells. A PD-1 inhibitor called pembrolizumab (Keytruda) can be used:</p>
+    <ul>
+      <li>Along with chemotherapy for triple-negative breast cancer</li>
+      <li>Before or after surgery for stage 2 and 3 cancers</li>
+      <li>For breast cancer recurrences too big for surgery</li>
+      <li>To treat metastatic breast cancer</li>
+    </ul>
+  
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-sections">
+        <div class="footer-column">
+          <h3>GETTING CARE</h3>
+          <ul>
+            <li><a href="../HTML FILES/doctor.html">Find a Doctor</a></li>
+            <li><a href="../HTML FILES/Emergency.html">Emergency Care</a></li>
+            <li><a href="../HTML FILES/appointment.html">Book an Appointment</a></li>
+            <li><a href="../HTML FILES/medicine.html">Medicines</a></li>
+            <li><a href="../HTML FILES/firstaid.html">First Aid Rules</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>GETTING INVOLVED</h3>
+          <ul>
+            <li><a href="#">Join Our Team</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Donate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>ABOUT US</h3>
+            <ul>
+              <li><a href="#">Locations & Directions</a></li>
+              <li><a href="../HTML FILES/contact.html">Contact Us</a></li>
+              <li><a href="../HTML FILES/health.html">Quality of Patient Care</a></li>
+              <li><a href="../index.html">Our Organization</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="footer-help">
+          <a href="../HTML FILES/contact.html">Need Help?</a>
+          <p>+123-456-7890</p>
+       
+            </footer>
+      </div>
+    </footer>
+          
+        </body>
+        </html>
+
