@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Appointment - Rural Medico</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling with Background Image */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url(../ALL\ IMAGES/appoitment.jpg) no-repeat center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Container */
+    .appointment-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 500px;
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease;
+    }
+
+    .appointment-container:hover {
+      transform: translateY(-5px);
+    }
+
+    .appointment-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+      font-size: 28px;
+    }
+
+    /* Form Styling */
+    .appointment-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #333;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      background: #f9f9f9;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #4caf50;
+      background: #fff;
+      box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    /* Button */
+    .submit-btn {
+      background: #5E8AB5;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .submit-btn:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 600px) {
+      .appointment-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="appointment-container">
+    <h2>Book an Appointment</h2>
+    <form class="appointment-form" onsubmit="bookAppointment(event)">
+      <div class="form-group">
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" name="full_name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address*</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" name="phone_number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address*</label>
+        <textarea id="address" name="address" rows="2" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age*</label>
+        <input type="number" id="age" name="age" min="0" required>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender*</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="problem">Describe Your Problem*</label>
+        <textarea id="problem" name="problem" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="preferred_doctor">Preferred Doctor (Optional)</label>
+        <select id="preferred_doctor" name="preferred_doctor">
+          <option value="">Select a Doctor</option>
+          <option value="Dr. Sharma">Dr. Sharma</option>
+          <option value="Dr. Gupta">Dr. Gupta</option>
+          <option value="Dr. Verma">Dr. Verma</option>
+          <option value="Any">Any Available Doctor</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Preferred Appointment Date*</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="time">Preferred Time*</label>
+        <select id="time" name="time" required>
+          <option value="">Select Time</option>
+          <option value="9:00 AM">9:00 AM</option>
+          <option value="10:00 AM">10:00 AM</option>
+          <option value="11:00 AM">11:00 AM</option>
+          <option value="12:00 PM">12:00 PM</option>
+          <option value="1:00 PM">1:00 PM</option>
+          <option value="2:00 PM">2:00 PM</option>
+          <option value="3:00 PM">3:00 PM</option>
+          <option value="4:00 PM">4:00 PM</option>
+          <option value="5:00 PM">5:00 PM</option>
+          <option value="6:00 PM">6:00 PM</option>
+          <option value="7:00 PM">7:00 PM</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">Book Appointment</button>
+    </form>
+  </div>
+
+  <script>
+    async function bookAppointment(event) {
+      event.preventDefault();
+      const form = event.target;
+
+      // Get user ID from storage
+      const userId = sessionStorage.getItem('userId');
+      if (!userId) {
+        alert('Please log in first.');
+        window.location.href = 'login.html';
+        return;
+      }
+
+      // Create properly structured payload
+      const payload = {
+        user_id: userId,
+        full_name: form.full_name.value,
+        email: form.email.value,
+        phone_number: form.phone_number.value,
+        address: form.address.value,
+        age: form.age.value,
+        gender: form.gender.value,
+        problem: form.problem.value,
+        preferred_doctor: form.preferred_doctor.value || 'Any', // Default value
+        date: form.date.value,
+        time: form.time.value
+      };
+
+      try {
+        const response = await fetch('http://localhost:3000/appointments', { // Fixed endpoint
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(result.message || 'Failed to book appointment');
+        }
+
+        alert('Appointment booked successfully!');
+        form.reset();
+        // Optionally redirect to another page
+        // window.location.href = 'appointments.html';
+
+      } catch (error) {
+        console.error('Booking error:', error);
+        alert(error.message || 'An error occurred. Please try again.');
+      }
+    }
+  </script>
+
+</body>
+
+</html>
