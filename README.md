@@ -1,5 +1,6 @@
 # Bhavya_rattan_BCA_Rural_Medico
-RURAL MEDICO- A Platform for affordable and accessible healthcare for rural communities.\n
+RURAL MEDICO- A Platform for affordable and accessible healthcare for rural communities.
+
 PROJECT DESCRIPTION:-
 Rural areas often struggle with limited access to quality healthcare due to lack of medical facilities, financial constraints, and long travel distances. Rural Medico is designed to bridge this gap by providing an affordable and accessible healthcare platform. It offers online doctor consultations, medicine guidance, health education, and first aid support to ensure people in remote areas receive the medical help they need. With this system makes healthcare simpler, cost-effective, and more reachable for underserved communities. The Rural Medico is revolutionizing healthcare in remote areas, ensuring no one is left behind in receiving quality medical care.
 PROJECT VIDEO LINK :
